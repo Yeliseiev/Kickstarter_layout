@@ -30,6 +30,8 @@
 
     &--top {
       position: fixed;
+      backdrop-filter: blur(10px);
+      background-color: rgba($color: $c-background, $alpha: 0.8);
       left: 0;
       right: 0;
       top: 0;

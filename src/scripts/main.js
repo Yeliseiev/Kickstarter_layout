@@ -1,9 +1,9 @@
 'use strict';
 
 const slider = document.querySelector('.swiper');
-/* eslint-disable */
+
+// eslint-disable-next-line no-new, no-undef
 new Swiper(slider, {
-/* eslint-enable */
   loop: true,
 
   pagination: {
@@ -15,9 +15,8 @@ new Swiper(slider, {
   },
 });
 
-/* eslint-disable */
+// eslint-disable-next-line no-new, no-undef
 new Swiper('.features-mob__swiper', {
-/* eslint-enable */
   loop: true,
 
   pagination: {
