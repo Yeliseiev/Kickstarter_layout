@@ -30,13 +30,25 @@
 
     &--top {
       position: fixed;
-      backdrop-filter: blur(10px);
-      background-color: rgba($color: $c-background, $alpha: 0.8);
       left: 0;
       right: 0;
       top: 0;
       padding: 10px;
-      border-bottom: 1px solid #000;
+    }
+
+    &--top::after {
+      content: "";
+      height: 1px;
+      margin-top: 46px;
+
+      position: fixed;
+      left: 0;
+      right: 0;
+
+      background-color: rgba($color: #000, $alpha: 0.2);
+      @include onTablet {
+        margin-top: 66px;
+      }
     }
   }
 
